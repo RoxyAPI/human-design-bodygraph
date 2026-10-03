@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Human Design Bodygraph Component Demo</title>
+	<meta name="description" content="Interactive Human Design bodygraph from RoxyAPI: enter a birth date, time and city and the web component draws the nine centers, channels and gates.">
+	<style>
+		body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; color: #18181b; }
+		main { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+		h1 { font-size: 1.75rem; margin: 0 0 8px; }
+		p { margin: 0 0 24px; color: #52525b; }
+		@media (prefers-color-scheme: dark) {
+			body { background: #09090b; color: #fafafa; }
+			p { color: #a1a1aa; }
+		}
+	</style>
+	<!-- Optional: warm practitioner theme (drop this line for the default look) -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@roxyapi/ui@latest/dist/styles/themes/practitioner.css"> -->
+	<script src="https://cdn.jsdelivr.net/npm/@roxyapi/ui@latest/dist/cdn/roxy-ui.js" defer></script>
+</head>
+<body>
+	<main>
+		<h1>Human Design Bodygraph</h1>
+		<p>Enter a birth date, time and city. The bodygraph draws the nine centers, defined channels and activated gates, with type, strategy, authority and profile, from the RoxyAPI Human Design endpoint.</p>
+		<roxy-bodygraph data-endpoint="human-design/bodygraph" publishable-key="pk_live_YOUR_KEY" hide-sections="hint"></roxy-bodygraph>
+	</main>
+</body>
+</html>

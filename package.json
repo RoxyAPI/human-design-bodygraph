@@ -1,0 +1,11 @@
+{
+  "name": "human-design-bodygraph",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}
